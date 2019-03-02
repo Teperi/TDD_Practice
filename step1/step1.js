@@ -32,8 +32,16 @@ module.exports = Account;
 */
 
 class Account {
-    constructor(balance) {
-        this.balance = balance;
+    constructor(money) {
+        this.balance = money;
+    }
+
+    deposit(money) {
+        this.balance += money;
+    }
+
+    withdraw(money) {
+        this.balance -= money;
     }
 }
 
