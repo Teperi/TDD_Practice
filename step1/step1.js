@@ -24,20 +24,17 @@ if (account === undefined) {
 */
 
 /*
-1. 정제 - 코드 정제 및 Todo list 정리
-*/
+1. 정제 - 코드 정제 및 Todo list 정리 & Jest 적용
+이후 작업부터는 쭉 진행함
 class Account {}
 
-let account = new Account()
+module.exports = Account;
+*/
 
-try {
-
-} catch (error) {
-
+class Account {
+    constructor(balance) {
+        this.balance = balance;
+    }
 }
 
-if (account === undefined) {
-    console.error("계좌 생성 실패")
-} else {
-    console.log("성공")
-}
+module.exports = Account;
